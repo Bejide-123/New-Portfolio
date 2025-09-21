@@ -6,7 +6,7 @@ import FadeUpSection from "./FadeUpSection";
 
 const Home = () => {
   return (
-    <div className="flex flex-col bg-white dark:bg-black min-h-screen transition-colors duration-300">
+    <div className="flex flex-col bg-white dark:bg-black min-h-screen transition-colors duration-300" id="home">
       <Navbar />
 
       <div className="flex flex-col items-center justify-center flex-1 text-center px-6 space-y-6">

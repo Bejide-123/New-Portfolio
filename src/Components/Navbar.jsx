@@ -13,11 +13,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-black shadow-md transition-colors duration-300">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         
         {/* Logo */}
-        <h1 className="text-2xl font-bold tracking-wide text-black dark:text-white ">
+        <h1 className="text-3xl font-bold tracking-wide text-black dark:text-white ">
           Fifi.<span className="text-blue-700 dark:text-blue-400">dev</span>
         </h1>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
             onClick={toggleTheme}
             className="p-2 rounded-full text-gray-800 dark:text-gray-500"
           >
-            {dark ? <MdSunny size={20} /> : <FaMoon size={20} />}
+            {dark ? <MdSunny size={22} /> : <FaMoon size={22} />}
           </button>
         </div>
       </div>
