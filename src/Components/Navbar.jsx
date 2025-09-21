@@ -17,8 +17,8 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         
         {/* Logo */}
-        <h1 className="text-2xl font-bold tracking-wide">
-          Fifi.<span className="text-blue-700 dark:text-blue-400">Codes</span>
+        <h1 className="text-2xl font-bold tracking-wide text-black dark:text-white ">
+          Fifi.<span className="text-blue-700 dark:text-blue-400">dev</span>
         </h1>
 
         {/* Desktop Menu */}
