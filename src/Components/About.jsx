@@ -40,7 +40,7 @@ const About = () => {
           {/* Fun Touch */}
           <p className="italic text-sm md:text-base text-gray-600 dark:text-gray-400 mb-6">
             Outside of coding, I enjoy listening to music, exploring emerging
-            technologies, and watching animated films 🎶🎬
+            technologies, and watching animated films.
           </p>
 
           <div className="flex justify-center md:justify-start space-x-6">
