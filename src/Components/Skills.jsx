@@ -115,7 +115,7 @@ const Skills = () => {
                   className="relative overflow-hidden flex flex-col items-start bg-white dark:bg-gray-800 rounded-2xl shadow-md p-5 
                              border border-gray-100 dark:border-gray-700 
                              transition-all duration-300 transform 
-                             hover:-translate-y-2 hover:scale-102"
+                             hover:-translate-y-0.5 hover:scale-102"
                 >
                   <div className="relative z-10 flex items-center gap-4 mb-3 md:py-5">
                     <span
@@ -128,7 +128,7 @@ const Skills = () => {
                     </h4>
                   </div>
 
-                  <p className="relative z-10 text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                  <p className="relative z-10 text-black dark:text-gray-300 text-sm leading-relaxed mb-4">
                     {skill.description}
                   </p>
 
