@@ -49,11 +49,37 @@ const Projects = () => {
               key={index}
               className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-200 dark:border-gray-800 transition transform hover:-translate-y-0.5 hover:shadow-2xl"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover hover:scale-105 hover:blur-xs transition-all duration-300 ease-in-out"
-              />
+              <div className="relative w-full h-48 overflow-hidden group">
+                {/* Project Image */}
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+                />
+
+                {/* Overlay with icons */}
+                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* Live Demo */}
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-3xl p-3 bg-transparent bg-opacity-50 rounded-full hover:scale-110 transition-transform duration-200"
+                  >
+                    <FiExternalLink />
+                  </a>
+
+                  {/* GitHub */}
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-3xl p-3 bg-transparent bg-opacity-50 rounded-full hover:scale-110 transition-transform duration-200"
+                  >
+                    <FaGithub />
+                  </a>
+                </div>
+              </div>
 
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
