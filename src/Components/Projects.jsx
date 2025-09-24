@@ -37,34 +37,51 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-white dark:bg-black py-16" id="projects">
+    <section className="bg-white dark:bg-black py-20" id="projects">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-          My Projects
-        </h2>
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            My Projects
+          </h2>
+          <div className="w-20 h-1 bg-blue-700 mx-auto rounded-full mb-6"></div>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            A collection of projects that showcase my skills and passion for creating meaningful digital experiences
+          </p>
+        </div>
 
-        <div className="grid mt-10 md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-200 dark:border-gray-800 transition transform hover:-translate-y-0.5 hover:shadow-2xl"
+              className="group bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden flex flex-col 
+                         border border-gray-100 dark:border-gray-800 
+                         transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200 dark:hover:border-blue-700"
             >
-              <div className="relative w-full h-48 overflow-hidden group">
+              <div className="relative w-full h-56 overflow-hidden">
                 {/* Project Image */}
                 <img
                   src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+                  alt={`${project.title} screenshot`}
+                  className="w-full h-full object-cover transition-all duration-500 ease-in-out 
+                           group-hover:scale-110"
                 />
 
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent 
+                               opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
                 {/* Overlay with icons */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex items-center justify-center gap-4 
+                               opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
                   {/* Live Demo */}
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white text-3xl p-3 bg-transparent bg-opacity-50 rounded-full hover:scale-110 transition-transform duration-200"
+                    className="text-white text-2xl p-4 bg-blue-700/90 backdrop-blur-sm rounded-full 
+                             hover:scale-110 hover:bg-blue-600 transition-all duration-200 shadow-lg"
+                    title="View Live Demo"
                   >
                     <FiExternalLink />
                   </a>
@@ -74,7 +91,9 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white text-3xl p-3 bg-transparent bg-opacity-50 rounded-full hover:scale-110 transition-transform duration-200"
+                    className="text-white text-2xl p-4 bg-gray-800/90 backdrop-blur-sm rounded-full 
+                             hover:scale-110 hover:bg-gray-700 transition-all duration-200 shadow-lg"
+                    title="View Source Code"
                   >
                     <FaGithub />
                   </a>
@@ -82,49 +101,79 @@ const Projects = () => {
               </div>
 
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-black dark:text-gray-300 mb-6">
+                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-sm flex-grow">
                   {project.description}
                 </p>
 
                 <div className="mt-auto">
+                  {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.stack.map((tech, i) => (
                       <span
                         key={i}
-                        className="bg-gray-200 dark:bg-gray-800 text-black dark:text-gray-200 text-xs px-2 py-1 rounded"
+                        className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 
+                                 text-xs px-3 py-1.5 rounded-full font-medium border border-blue-200 dark:border-blue-800
+                                 transition-colors duration-200 hover:bg-blue-200 dark:hover:bg-blue-800/50"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-4">
+
+                  {/* Action Buttons */}
+                  <div className="flex gap-3">
                     <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 pr-2 flex px-5 py-3 items-center justify-center gap-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 transition-transform transform hover:scale-101 duration-300 font-medium group"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-3 
+                               bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg 
+                               hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 font-medium group/btn"
                     >
-                      Live Demo
-                      <FiExternalLink className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <span>Live Demo</span>
+                      <FiExternalLink className="opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-0.5 transition-all duration-200" />
                     </a>
 
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex pr-2 px-5 py-3 items-center justify-center gap-2 bg-blue-700 text-white rounded-lg shadow-md hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500 transition-transform transform hover:scale-101 duration-300 font-medium group"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-3 
+                               bg-blue-700 text-white rounded-lg hover:bg-blue-800 
+                               dark:bg-blue-600 dark:hover:bg-blue-500 transition-all duration-300 font-medium group/btn"
                     >
-                      GitHub
-                      <FaGithub className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <span>GitHub</span>
+                      <FaGithub className="opacity-0 group-hover/btn:opacity-100 group-hover/btn:scale-110 transition-all duration-200" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16 p-8 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/10 dark:to-indigo-900/10 rounded-2xl border border-blue-100 dark:border-blue-800">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            More Projects Coming Soon
+          </h3>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-6">
+            I'm constantly working on new projects and exploring different technologies. 
+            Check back regularly or follow me on GitHub for the latest updates.
+          </p>
+          <a
+            href="https://github.com/Bejide-123"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-700 text-white font-semibold rounded-lg 
+            hover:bg-blue-800 hover:shadow-lg transition-all duration-300"
+          >
+            <FaGithub size={18} />
+            View All Projects
+          </a>
         </div>
       </div>
     </section>

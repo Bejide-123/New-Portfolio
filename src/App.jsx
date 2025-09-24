@@ -5,6 +5,8 @@ import About from './Components/About'
 import Skills from './Components/Skills'
 import FadeInSection from './Components/FadeInSection'
 import Projects from './Components/Projects'
+import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -18,6 +20,12 @@ const App = () => {
       </FadeInSection>
       <FadeInSection>
         <Projects />
+      </FadeInSection>
+      <FadeInSection>
+        <Contact />
+      </FadeInSection>
+      <FadeInSection>
+        <Footer />
       </FadeInSection>
     </div>
   )

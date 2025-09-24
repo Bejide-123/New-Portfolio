@@ -23,11 +23,15 @@ const About = () => {
 
         {/* Right: Text */}
         <div className="flex flex-col justify-center text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8 md:flex justify-start">
-            About Me
-          </h2>
+          <div className="mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3">
+                About Me
+            </h2>
+            <div className="w-16 h-1 bg-blue-700 mx-auto md:mx-0 rounded-full"></div>
+          </div>
+          
           <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-            I’m a{" "}
+            I'm a{" "}
             <span className="text-blue-700 dark:text-blue-400 font-medium">
               Frontend Developer
             </span>{" "}
@@ -38,10 +42,12 @@ const About = () => {
           </p>
 
           {/* Fun Touch */}
-          <p className="italic text-sm md:text-base text-gray-600 dark:text-gray-400 mb-6">
-            Outside of coding, I enjoy listening to music, exploring emerging
-            technologies, and watching animated films.
-          </p>
+          <div className="bg-gray-50 mb-4 dark:bg-gray-900 rounded-lg p-4 border-l-4 border-blue-700">
+              <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 italic">
+                When I'm not coding, you'll find me listening to music, exploring emerging
+                technologies, and watching animated films. Always curious, always learning.
+              </p>
+            </div>
 
           <div className="flex justify-center md:justify-start space-x-6">
             <a
