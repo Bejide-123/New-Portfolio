@@ -80,7 +80,7 @@ const About = () => {
             <a
               href={CV}
               download
-              className="w-50 flex items-center justify-center gap-2 px-6 py-3 bg-blue-700 text-white font-medium rounded-lg shadow-md 
+              className="w-58 flex items-center justify-center gap-2 px-6 py-3 bg-blue-700 text-white font-medium rounded-lg shadow-md 
                         hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-600 
                         transition-colors duration-300 mb-6 mt-6"
             >
