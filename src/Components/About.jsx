@@ -3,6 +3,7 @@ import IMG from "../assets/IMG-20250921-WA0047[1].jpg";
 import { FiDownload } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import CV from "../assets/Bejide-Mofiyinfoluwa-Israel.pdf"
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
           <img
             src={IMG}
             alt="Profile"
-            className="w-160 h-120 object-cover rounded-2xl shadow-lg border-2 border-gray-200 dark:border-gray-700 
+            className="w-180 h-110 object-cover rounded-2xl shadow-lg border-2 border-gray-200 dark:border-gray-700 
             transform hover:shadow-blue-500/50 transition-transform duration-500"
           />
         </div>
@@ -77,14 +78,14 @@ const About = () => {
           {/* Download CV Button */}
           <div className="flex justify-center md:justify-start">
             <a
-              href="/cv.pdf"
+              href={CV}
               download
               className="w-44 flex items-center justify-center gap-2 px-6 py-3 bg-blue-700 text-white font-medium rounded-lg shadow-md 
                         hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-600 
                         transition-colors duration-300 mb-6 mt-6"
             >
               <FiDownload size={20} />
-              Download CV
+              Download Resume
             </a>
           </div>
         </div>

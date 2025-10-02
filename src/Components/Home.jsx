@@ -10,8 +10,8 @@ const Home = () => {
     <div className="flex flex-col bg-white dark:bg-black min-h-screen transition-colors duration-300" id="home">
       <Navbar />
 
-      <div className="flex flex-col items-center justify-center flex-1 text-center px-6 py-32 relative">
-        <div className="relative z-10 space-y-12 max-w-4xl">
+      <div className="flex flex-col items-center justify-center flex-1 text-center px-6 py-28 relative">
+        <div className="relative z-10 space-y-8 max-w-4xl">
           <FadeUpSection>
             <p className="text-lg md:text-xl text-blue-700 dark:text-blue-400 font-medium">
               Hi there, I'm
@@ -73,7 +73,7 @@ const Home = () => {
                   rel="noopener noreferrer"
                   className="group p-4 bg-gray-100 dark:bg-gray-800 rounded-full 
                            text-gray-700 dark:text-gray-300 hover:text-white 
-                           hover:bg-gray-900 dark:hover:bg-gray-600 
+                           hover:bg-blue-700 dark:hover:bg-blue-600 
                            transition-all duration-300 hover:scale-110"
                   title="GitHub Profile"
                 >
