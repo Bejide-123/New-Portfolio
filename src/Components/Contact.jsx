@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaRocket } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdSchedule } from "react-icons/md";
 import { FiDownload, FiMessageCircle } from "react-icons/fi";
 import { BiCoffee } from "react-icons/bi";
+import CV from "../assets/Bejide-Mofiyinfoluwa-Israel.pdf"
 
 const Contact = () => {
   return (
@@ -162,7 +163,7 @@ const Contact = () => {
                 about my background.
               </p>
               <a
-                href="/Resume.pdf"
+                href={CV}
                 download
                 className="flex items-center justify-center gap-3 bg-blue-700 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-800 transition-all duration-300 group w-full mt-auto"
               >
