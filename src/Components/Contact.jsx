@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaRocket } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdSchedule } from "react-icons/md";
 import { FiDownload, FiMessageCircle } from "react-icons/fi";
 import { BiCoffee } from "react-icons/bi";
-import CV from "../assets/Bejide-Mofiyinfoluwa-Israel.pdf"
+import CV from "../assets/Bejide-Mofiyinfoluwa-Israel-(2).pdf"
 
 const Contact = () => {
   return (
