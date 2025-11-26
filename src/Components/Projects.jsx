@@ -1,7 +1,8 @@
 import React from "react";
 import Image1 from "../assets/Estate.png";
-import Image2 from "../assets/Movie-app.png";
+import Image2 from "../assets/MovieApp.png";
 import Image3 from "../assets/EduTrackr.png";
+import Image4 from "../assets/VoteSecure.png";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 
@@ -19,10 +20,10 @@ const Projects = () => {
     {
       title: "Movie Search App",
       description:
-        "A movie search platform that lets users explore films, view details, and save favourites with API integration. It includes a dedicated favourites page for quick access and demonstrates API handling, state management, and a clean responsive design using React, JavaScript, and CSS.",
-      demo: "https://bejide-123.github.io/Movie-App/",
-      github: "https://github.com/Bejide-123/Movie-App",
-      stack: ["React", "Vite", "JavaScript", "CSS"],
+        "A movie search platform that lets users explore films, view details, and save favourites with API integration. It includes a dedicated favourites page for quick access and demonstrates API handling, state management, and a clean responsive design using React, TypeScript, and Tailwind CSS.",
+      demo: "https://movie-app-tsx.vercel.app/",
+      github: "https://github.com/Bejide-123/Movie-AppTsx",
+      stack: ["React", "Vite", "Typescript", "Tailwind"],
       image: Image2,
     },
     {
@@ -33,6 +34,24 @@ const Projects = () => {
       github: "https://github.com/Bejide-123/EduTrackr",
       stack: ["React", "Vite", "CSS", "JavaScript"],
       image: Image3,
+    },
+    {
+      title: "VoteSecure (In Development)",
+      description:
+        "A secure, blockchain-inspired electronic voting platform that offers real-time election monitoring, multi-position ballots, role-based authentication, fraud-detection alerts, live analytics, and a responsive admin dashboard — all built to ensure transparent, tamper-proof, end-to-end election management.",
+      demo: "https://vote-secure-alpha.vercel.app/",
+      github: "https://github.com/Bejide-123/VoteSecure",
+      stack: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase",
+        "Framer Motion",
+        "React Router",
+        "Recharts",
+        "Vite",
+      ],
+      image: Image4,
     },
   ];
 
@@ -46,7 +65,8 @@ const Projects = () => {
           </h2>
           <div className="w-20 h-1 bg-blue-700 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A collection of projects that showcase my skills and passion for creating meaningful digital experiences
+            A collection of projects that showcase my skills and passion for
+            creating meaningful digital experiences
           </p>
         </div>
 
@@ -68,12 +88,16 @@ const Projects = () => {
                 />
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent 
-                               opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent 
+                               opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
 
                 {/* Overlay with icons */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 
-                               opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                <div
+                  className="absolute inset-0 flex items-center justify-center gap-4 
+                               opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0"
+                >
                   {/* Live Demo */}
                   <a
                     href={project.demo}
@@ -161,8 +185,9 @@ const Projects = () => {
             More Projects Coming Soon
           </h3>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-6">
-            I'm constantly working on new projects and exploring different technologies. 
-            Check back regularly or follow me on GitHub for the latest updates.
+            I'm constantly working on new projects and exploring different
+            technologies. Check back regularly or follow me on GitHub for the
+            latest updates.
           </p>
           <a
             href="https://github.com/Bejide-123"
