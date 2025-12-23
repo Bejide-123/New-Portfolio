@@ -59,7 +59,7 @@ const Projects = () => {
   description:
     "A modern, full-stack blogging platform that allows users to create, edit, and publish articles with a clean reading experience. Scribe features secure authentication, user profiles, rich content management, and responsive design — built to empower writers to share ideas seamlessly.",
   demo: "https://blog-liard-alpha-80.vercel.app/", // update when ready
-  github: "https://github.com/Bejide-123/Scribe", // update if repo name differs
+  github: "https://github.com/Bejide-123/Blog", // update if repo name differs
   stack: [
     "React",
     "JavaScript",
