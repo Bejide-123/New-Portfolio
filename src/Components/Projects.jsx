@@ -3,6 +3,7 @@ import Image1 from "../assets/Estate.png";
 import Image2 from "../assets/MovieApp.png";
 import Image3 from "../assets/EduTrackr.png";
 import Image4 from "../assets/VoteSecure.png";
+import Image5 from "../assets/Scribe.png";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 
@@ -53,6 +54,23 @@ const Projects = () => {
       ],
       image: Image4,
     },
+    {
+  title: "Scribe (Blog Platform)",
+  description:
+    "A modern, full-stack blogging platform that allows users to create, edit, and publish articles with a clean reading experience. Scribe features secure authentication, user profiles, rich content management, and responsive design — built to empower writers to share ideas seamlessly.",
+  demo: "https://blog-liard-alpha-80.vercel.app/", // update when ready
+  github: "https://github.com/Bejide-123/Scribe", // update if repo name differs
+  stack: [
+    "React",
+    "JavaScript",
+    "Tailwind CSS",
+    "Supabase",
+    "React Router",
+    "Vite",
+  ],
+  image: Image5, // import your Scribe.png or hero screenshot
+}
+
   ];
 
   return (
