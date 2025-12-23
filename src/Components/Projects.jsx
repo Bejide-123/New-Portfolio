@@ -55,7 +55,7 @@ const Projects = () => {
       image: Image4,
     },
     {
-  title: "Scribe (Blog Platform)",
+  title: "Scribe (Blog Platform) (In Development)",
   description:
     "A modern, full-stack blogging platform that allows users to create, edit, and publish articles with a clean reading experience. Scribe features secure authentication, user profiles, rich content management, and responsive design — built to empower writers to share ideas seamlessly.",
   demo: "https://blog-liard-alpha-80.vercel.app/", // update when ready
