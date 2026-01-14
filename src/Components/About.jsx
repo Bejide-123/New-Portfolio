@@ -1,6 +1,6 @@
 import React from "react";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
-import CV from "../assets/Bejide-Mofiyinfoluwa-Israel-(2).pdf"
+import CV from "../assets/Bejide-Israel_Frontend-Engineer.pdf"
 
 
 const About = () => {
