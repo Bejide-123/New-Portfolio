@@ -1,11 +1,19 @@
 // Skills.jsx
 import React from "react";
 import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiGit } from "react-icons/di";
-import { SiTypescript, SiPostman, SiGithub, SiTailwindcss } from "react-icons/si";
+import {
+  SiTypescript,
+  SiPostman,
+  SiGithub,
+  SiTailwindcss,
+  SiRedux,
+  SiNextdotjs,
+  SiSupabase,
+} from "react-icons/si";
 
 const sections = [
   {
-    title: "Web Essentials",
+    title: "Web Essentials & Languages",
     skills: [
       {
         name: "HTML",
@@ -34,6 +42,15 @@ const sections = [
           "DOM manipulation, ES6+, async/await, event handling, and problem-solving logic.",
         tags: ["ES6+", "async/await", "DOM"],
       },
+      {
+        name: "TypeScript",
+        Icon: SiTypescript,
+        color: "text-[#3178C6]",
+        bgColor: "bg-[#3178C6]/10",
+        description:
+          "Adding static types to JS — learning interfaces, type safety, generics, and React with TS.",
+        tags: ["Interfaces", "Generics", "Type Safety"],
+      },
     ],
   },
   {
@@ -58,13 +75,22 @@ const sections = [
         tags: ["Utility classes", "Responsive", "Dark mode"],
       },
       {
-        name: "TypeScript",
-        Icon: SiTypescript,
-        color: "text-[#3178C6]",
-        bgColor: "bg-[#3178C6]/10",
+        name: "Next.js",
+        Icon: SiNextdotjs,
+        color: "text-black dark:text-white",
+        bgColor: "bg-black/10 dark:bg-white/10",
         description:
-          "Adding static types to JS — learning interfaces, type safety, generics, and React with TS.",
-        tags: ["Interfaces", "Generics", "Type Safety"],
+          "Building full-stack React applications with file-based routing, server-side rendering, and optimized performance.",
+        tags: ["SSR", "Routing", "Performance"],
+      },
+      {
+        name: "Redux Toolkit",
+        Icon: SiRedux, // import from react-icons/si
+        color: "text-[#764ABC]",
+        bgColor: "bg-[#764ABC]/10",
+        description:
+          "Centralized state management using Redux Toolkit, including slices, async thunks, and scalable state architecture.",
+        tags: ["Slices", "Async Thunks", "State Management"],
       },
     ],
   },
@@ -90,6 +116,15 @@ const sections = [
         tags: ["Pull Requests", "Collaboration", "CI/CD"],
       },
       {
+        name: "Supabase",
+        Icon: SiSupabase,
+        color: "text-[#3ECF8E]",
+        bgColor: "bg-[#3ECF8E]/10",
+        description:
+          "Backend-as-a-Service for authentication, real-time database, and API integration.",
+        tags: ["Auth", "Database", "Realtime"],
+      },
+      {
         name: "Postman",
         Icon: SiPostman,
         color: "text-[#FF6C37]",
@@ -104,7 +139,10 @@ const sections = [
 
 const Skills = () => {
   return (
-    <section className="py-20 px-6 bg-white dark:bg-black transition-colors duration-300" id="skills">
+    <section
+      className="py-20 px-6 bg-white dark:bg-black transition-colors duration-300"
+      id="skills"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -113,7 +151,8 @@ const Skills = () => {
           </h2>
           <div className="w-20 h-1 bg-blue-700 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Here's my technical toolkit - the technologies and tools I use to bring ideas to life
+            Here's my technical toolkit - the technologies and tools I use to
+            bring ideas to life
           </p>
         </div>
 
@@ -139,12 +178,17 @@ const Skills = () => {
                   >
                     {/* Subtle gradient overlay on hover */}
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
+
                     <div className="relative z-10 p-6">
                       {/* Icon and Title */}
                       <div className="flex items-center gap-4 mb-4">
-                        <div className={`${skill.bgColor} p-3 rounded-xl transition-transform duration-300 group-hover:scale-110`}>
-                          <Icon className={`text-3xl ${skill.color}`} aria-hidden="true" />
+                        <div
+                          className={`${skill.bgColor} p-3 rounded-xl transition-transform duration-300 group-hover:scale-110`}
+                        >
+                          <Icon
+                            className={`text-3xl ${skill.color}`}
+                            aria-hidden="true"
+                          />
                         </div>
                         <h4 className="text-xl font-bold text-gray-800 dark:text-white">
                           {skill.name}
@@ -183,8 +227,9 @@ const Skills = () => {
             Always Learning
           </h3>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Technology evolves rapidly, and so do I. I'm constantly exploring new tools, 
-            frameworks, and best practices to stay at the forefront of web development.
+            Technology evolves rapidly, and so do I. I'm constantly exploring
+            new tools, frameworks, and best practices to stay at the forefront
+            of web development.
           </p>
         </div>
       </div>

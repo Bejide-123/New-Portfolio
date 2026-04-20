@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: "Scribe – Blog Platform (In Development)",
       description:
-        "A modern, full-stack blogging platform that allows users to create, edit, and publish articles with a clean reading experience. Scribe features secure authentication, user profiles, rich content management, and responsive design — built to empower writers to share ideas seamlessly.",
+       "A modern, full-stack blogging platform that enables users to create, edit, and publish articles with a clean, distraction-free reading experience. Scribe features secure authentication, user profiles, and structured content management, along with real-time database integration, dynamic routing, and responsive UI design — built to provide a scalable and seamless platform for writers to share ideas and manage their content efficiently.",
       demo: "https://blog-liard-alpha-80.vercel.app/", // update when ready
       github: "https://github.com/Bejide-123/Blog", // update if repo name differs
       stack: [
@@ -24,24 +24,6 @@ const Projects = () => {
         "Vite",
       ],
       image: Image5, // import your Scribe.png or hero screenshot
-    },
-    {
-      title: "VoteSecure (Work in Progress – Paused)",
-      description:
-        "A secure, blockchain-inspired electronic voting platform that offers real-time election monitoring, multi-position ballots, role-based authentication, fraud-detection alerts, live analytics, and a responsive admin dashboard — all built to ensure transparent, tamper-proof, end-to-end election management.",
-      demo: "https://vote-secure-alpha.vercel.app/",
-      github: "https://github.com/Bejide-123/VoteSecure",
-      stack: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Supabase",
-        "Framer Motion",
-        "React Router",
-        "Recharts",
-        "Vite",
-      ],
-      image: Image4,
     },
     {
       title: "Support Hub – Customer Support System",
@@ -61,6 +43,24 @@ const Projects = () => {
         "Vite",
       ],
       image: Image1,
+    },
+    {
+      title: "VoteSecure (Work in Progress – Paused)",
+      description:
+        "A secure, blockchain-inspired electronic voting platform that enables transparent and tamper-resistant election processes. It features real-time election monitoring, multi-position ballot systems, role-based authentication, fraud-detection alerts, and live analytics, alongside a responsive admin dashboard and scalable data architecture — built to ensure secure, auditable, and efficient end-to-end election management.",
+      demo: "https://vote-secure-alpha.vercel.app/",
+      github: "https://github.com/Bejide-123/VoteSecure",
+      stack: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase",
+        "Framer Motion",
+        "React Router",
+        "Recharts",
+        "Vite",
+      ],
+      image: Image4,
     },
     {
       title: "Movie Search App",
