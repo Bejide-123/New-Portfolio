@@ -1,6 +1,6 @@
 import React from "react";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
-import CV from "../assets/Bejide-Israel_Frontend-Engineer.pdf"
+import CV from "../assets/BEJIDE-MOFIYINFOLUWA-ISRAEL-FRONTEND-DEVELOPER.pdf"
 
 
 const About = () => {
@@ -87,7 +87,7 @@ const About = () => {
           {/* Download CV Button */}
           <a
             href={CV}
-            download="Bejide-Mofiyinfoluwa-Israel.pdf"
+            download="Bejide-Mofiyinfoluwa-Israel-Resume.pdf"
             className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-blue-700 text-white font-medium rounded-lg shadow-md 
                       hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-600 
                       transition-colors duration-300"

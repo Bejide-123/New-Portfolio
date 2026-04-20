@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "../assets/Estate.png";
+import Image1 from "../assets/Support-Hub.png";
 import Image2 from "../assets/MovieApp.png";
 import Image3 from "../assets/EduTrackr.png";
 import Image4 from "../assets/VoteSecure.png";
@@ -10,7 +10,23 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   const projects = [
     {
-      title: "VoteSecure (In Development)",
+      title: "Scribe – Blog Platform (In Development)",
+      description:
+        "A modern, full-stack blogging platform that allows users to create, edit, and publish articles with a clean reading experience. Scribe features secure authentication, user profiles, rich content management, and responsive design — built to empower writers to share ideas seamlessly.",
+      demo: "https://blog-liard-alpha-80.vercel.app/", // update when ready
+      github: "https://github.com/Bejide-123/Blog", // update if repo name differs
+      stack: [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Supabase",
+        "React Router",
+        "Vite",
+      ],
+      image: Image5, // import your Scribe.png or hero screenshot
+    },
+    {
+      title: "VoteSecure (Work in Progress – Paused)",
       description:
         "A secure, blockchain-inspired electronic voting platform that offers real-time election monitoring, multi-position ballots, role-based authentication, fraud-detection alerts, live analytics, and a responsive admin dashboard — all built to ensure transparent, tamper-proof, end-to-end election management.",
       demo: "https://vote-secure-alpha.vercel.app/",
@@ -28,28 +44,22 @@ const Projects = () => {
       image: Image4,
     },
     {
-      title: "Scribe (Blog Platform) (In Development)",
+      title: "Support Hub – Customer Support System",
       description:
-        "A modern, full-stack blogging platform that allows users to create, edit, and publish articles with a clean reading experience. Scribe features secure authentication, user profiles, rich content management, and responsive design — built to empower writers to share ideas seamlessly.",
-      demo: "https://blog-liard-alpha-80.vercel.app/", // update when ready
-      github: "https://github.com/Bejide-123/Blog", // update if repo name differs
+        "A full-stack customer support management platform that enables users to create and track support tickets while providing agents with a structured dashboard to manage requests efficiently. It features global state management with Redux Toolkit, real-time data integration via Supabase, ticket categorization, status tracking, and role-based workflows — designed to streamline communication between users and support teams.",
+      demo: "https://support-hub-nine.vercel.app/",
+      github: "https://github.com/Bejide-123/Support-Hub",
       stack: [
         "React",
-        "JavaScript",
+        "TypeScript",
+        "Redux Toolkit",
+        "React Redux",
         "Tailwind CSS",
         "Supabase",
         "React Router",
+        "React Hook Form",
         "Vite",
       ],
-      image: Image5, // import your Scribe.png or hero screenshot
-    },
-    {
-      title: "Real Estate Landing Page",
-      description:
-        "A responsive landing page for a real estate agency showcasing available properties and a contact form powered by EmailJS. Visitors can browse projects, view multiple images of apartments, and book appointments directly. Built with React and TailwindCSS, it highlights modern UI, smooth navigation, and practical client interaction features.",
-      demo: "https://tailwindcss-psi.vercel.app/",
-      github: "https://github.com/Bejide-123/tailwindcss",
-      stack: ["React", "Vite", "TailwindCSS", "JavaScript", "EmailJS"],
       image: Image1,
     },
     {
