@@ -29,7 +29,7 @@ const Projects = () => {
       title: "Support Hub – Customer Support System",
       description:
         "A full-stack customer support management platform that enables users to create and track support tickets while providing agents with a structured dashboard to manage requests efficiently. It features global state management with Redux Toolkit, real-time data integration via Supabase, ticket categorization, status tracking, and role-based workflows — designed to streamline communication between users and support teams.",
-      demo: "https://support-hub-nine.vercel.app/",
+      demo: "https://support-hub-j8gw.vercel.app/",
       github: "https://github.com/Bejide-123/Support-Hub",
       stack: [
         "React",
