@@ -1,100 +1,139 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import { FiArrowUp } from "react-icons/fi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FiArrowUp } from "react-icons/fi";
+import { Link } from "react-scroll";
+
+const navLinks = [
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
+];
+
+const socialLinks = [
+  {
+    href: "https://github.com/Bejide-123",
+    label: "GitHub",
+    icon: <FaGithub size={17} />,
+    external: true,
+  },
+  {
+    href: "mailto:isbejide10@gmail.com",
+    label: "Email",
+    icon: <MdEmail size={18} />,
+    external: false,
+  },
+  {
+    href: "https://www.linkedin.com/in/bejide-israel-8a2144377",
+    label: "LinkedIn",
+    icon: <FaLinkedin size={17} />,
+    external: true,
+  },
+];
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="bg-gray-900 text-white py-8">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        {/* Name + About */}
-        <h3 className="text-xl font-bold mb-2">Bejide Mofiyinfoluwa Israel</h3>
-        <p className="text-gray-400 text-sm max-w-xl mx-auto mb-4">
-          Frontend Developer passionate about building clean, modern, and
-          accessible web experiences. Always open to collaborations and new
-          opportunities.
-        </p>
+    <footer className="relative border-t border-white/[0.05] bg-[#0D0D0F] px-6 pt-16 pb-10 overflow-hidden">
+      {/* Subtle top orb */}
+      <div
+        className="pointer-events-none absolute top-[-30%] left-1/2 -translate-x-1/2
+                    w-[600px] h-[300px] rounded-full"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(232,160,32,0.04) 0%, transparent 70%)",
+        }}
+      />
 
-        {/* Contact Email */}
-        <p className="text-gray-300 text-sm mb-6">
-          📧{" "}
-          <a
-            href="mailto:isbejide10@gmail.com"
-            className="hover:underline hover:text-blue-400"
-          >
-            isbejide10@gmail.com
-          </a>
-        </p>
+      <div className="relative max-w-6xl mx-auto">
 
-        {/* Social Links */}
-        <div className="flex justify-center gap-6 text-2xl mb-6">
-          <a
-            href="mailto:isbejide10@gmail.com"
-            className="text-gray-400 hover:text-red-500 transition"
-            title="Email"
-          >
-            <MdEmail />
-          </a>
-          <a
-            href="https://github.com/Bejide-123"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
-            title="GitHub"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/bejide-israel-8a2144377"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-500 transition"
-            title="LinkedIn"
-          >
-            <FaLinkedin />
-          </a>
-          {/* <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition"
-            title="Twitter"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="https://instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-pink-500 transition"
-            title="Instagram"
-          >
-            <FaInstagram />
-          </a> */}
+        {/* Top row */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10 mb-14">
+
+          {/* Brand */}
+          <div className="max-w-xs">
+            <span className="font-syne text-[20px] font-bold tracking-tight text-white block mb-3">
+              Fifi<span className="text-amber-400">.</span>dev
+            </span>
+            <p className="text-[13px] leading-[1.8] text-white/30">
+              Frontend Developer based in Lagos, building fast, accessible,
+              and well-crafted web experiences.
+            </p>
+          </div>
+
+          {/* Nav links */}
+          <nav>
+            <ul className="flex flex-wrap gap-x-8 gap-y-3">
+              {navLinks.map((link) => (
+                <li key={link.id}>
+                  <Link
+                    to={link.id}
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    className="text-[13px] uppercase tracking-[0.08em] font-medium
+                               text-white/30 hover:text-white cursor-pointer
+                               transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Social icons */}
+          <div className="flex items-center gap-2">
+            {socialLinks.map(({ href, label, icon, external }) => (
+              <a
+                key={label}
+                href={href}
+                {...(external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+                aria-label={label}
+                className="p-2.5 rounded-xl border border-white/[0.07] text-white/30
+                           hover:text-amber-400 hover:border-amber-400/30
+                           hover:bg-amber-400/[0.06] transition-all duration-200"
+              >
+                {icon}
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          {/* Copyright */}
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Bejide Mofiyinfoluwa Israel. All rights
-            reserved.
+        <div className="w-full h-px bg-white/[0.05] mb-8" />
+
+        {/* Bottom row */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-[12px] text-white/20">
+            © {new Date().getFullYear()} Bejide Mofiyinfoluwa Israel. All rights reserved.
           </p>
 
-          {/* Back to Top Button */}
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-600 rounded-lg transition-all duration-300 text-sm"
+            className="inline-flex items-center gap-2 px-4 py-2.5
+                       border border-white/[0.07] text-white/30 text-[12px] font-medium
+                       rounded-xl hover:border-amber-400/30 hover:text-amber-400
+                       hover:bg-amber-400/[0.06] transition-all duration-200 group"
+            aria-label="Back to top"
           >
-            <span>Back to Top</span>
-            <FiArrowUp />
+            Back to top
+            <FiArrowUp
+              size={13}
+              className="group-hover:-translate-y-0.5 transition-transform duration-200"
+            />
           </button>
         </div>
       </div>
+
+      <style>{`
+        .font-syne { font-family: 'Syne', sans-serif; }
+      `}</style>
     </footer>
   );
 };

@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
 @import "tailwindcss";
+
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+
+
 html {
   scroll-behavior: smooth;
+  background-color: #0D0D0F; 
 }
 
 .active-link {
   color: #2563eb; /* blue-600 */
   position: relative;
 }
+
 
 .active-link::after {
   content: "";
