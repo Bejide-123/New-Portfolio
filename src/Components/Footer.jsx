@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="max-w-xs">
             <span className="font-syne text-[20px] font-bold tracking-tight text-white block mb-3">
-              Fifi<span className="text-amber-400">.</span>dev
+              Fifi<span className="text-amber-400">.dev</span>
             </span>
             <p className="text-[13px] leading-[1.8] text-white/30">
               Frontend Developer based in Lagos, building fast, accessible,
@@ -75,7 +75,7 @@ const Footer = () => {
                     duration={500}
                     offset={-80}
                     className="text-[13px] uppercase tracking-[0.08em] font-medium
-                               text-white/30 hover:text-white cursor-pointer
+                               text-white/30 hover:text-amber-400 cursor-pointer
                                transition-colors duration-200"
                   >
                     {link.label}
