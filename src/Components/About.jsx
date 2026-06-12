@@ -23,7 +23,7 @@ const socialLinks = [
     external: false,
   },
   {
-    href: "https://www.linkedin.com/in/bejide-israel-8a2144377/",
+    href: "https://www.linkedin.com/in/bejide-mofiyinfoluwa-israel-8a2144377",
     label: "LinkedIn",
     icon: <Linkedin size={18} />,
     external: true,

@@ -20,7 +20,7 @@ const contactLinks = [
     external: false,
   },
   {
-    href: "https://www.linkedin.com/in/bejide-israel-8a2144377",
+    href: "https://www.linkedin.com/in/bejide-mofiyinfoluwa-israel-8a2144377",
     label: "LinkedIn",
     sub: "Let's connect professionally",
     icon: <FaLinkedin size={20} />,
