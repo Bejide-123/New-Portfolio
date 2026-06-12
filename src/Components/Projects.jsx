@@ -15,7 +15,7 @@ const projects = [
     description:
       "A modern full-stack blogging platform for creating, editing, and publishing articles. Features secure authentication, user profiles, real-time database integration, and a clean distraction-free reading experience.",
     demo: "https://blog-liard-alpha-80.vercel.app/",
-    github: "https://github.com/Bejide-123/Blog",
+    github: "https://github.com/Bejide-123/Scribe",
     stack: ["React", "JavaScript", "Tailwind CSS", "Supabase", "React Router", "Vite"],
     image: Image5,
   },
