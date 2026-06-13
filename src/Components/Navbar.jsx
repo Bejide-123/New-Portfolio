@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 lg:px-12">
 
         <span className="font-syne text-[18px] font-bold tracking-tight text-white">
-          Fifi<span className="text-amber-400">.dev</span>
+          Fiyin<span className="text-amber-400">.dev</span>
         </span>
 
         {/* Desktop links */}
