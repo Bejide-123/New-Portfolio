@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <span className="font-syne text-[18px] font-bold tracking-tight text-white">
-          Fifi<span className="text-amber-400">.dev</span>
+          Fiyin<span className="text-amber-400">.dev</span>
         </span>
 
         {/* Desktop links */}
