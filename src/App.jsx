@@ -6,12 +6,14 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Experience from "./Components/Experience";
 
 const App = () => {
   return (
     <div className="bg-[#0D0D0F]">
       <Home />
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <Contact />
